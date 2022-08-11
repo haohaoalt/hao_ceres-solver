@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /home/hao007/hao_ceres-solver/examples
 CMAKE_BINARY_DIR = /home/hao007/hao_ceres-solver/examples/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/curve_fitting.dir
+
+# All Build rule for target.
+CMakeFiles/curve_fitting.dir/all:
+	$(MAKE) -f CMakeFiles/curve_fitting.dir/build.make CMakeFiles/curve_fitting.dir/depend
+	$(MAKE) -f CMakeFiles/curve_fitting.dir/build.make CMakeFiles/curve_fitting.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hao007/hao_ceres-solver/examples/build/CMakeFiles --progress-num=5,6 "Built target curve_fitting"
+.PHONY : CMakeFiles/curve_fitting.dir/all
+
+# Include target in all.
+all: CMakeFiles/curve_fitting.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/curve_fitting.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hao007/hao_ceres-solver/examples/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/curve_fitting.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hao007/hao_ceres-solver/examples/build/CMakeFiles 0
+.PHONY : CMakeFiles/curve_fitting.dir/rule
+
+# Convenience name for target.
+curve_fitting: CMakeFiles/curve_fitting.dir/rule
+
+.PHONY : curve_fitting
+
+# clean rule for target.
+CMakeFiles/curve_fitting.dir/clean:
+	$(MAKE) -f CMakeFiles/curve_fitting.dir/build.make CMakeFiles/curve_fitting.dir/clean
+.PHONY : CMakeFiles/curve_fitting.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/curve_fitting.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ceres_demo.dir
 
 # All Build rule for target.
@@ -93,6 +130,43 @@ CMakeFiles/ceres_demo.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/ceres_demo.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ceres_demo_num.dir
+
+# All Build rule for target.
+CMakeFiles/ceres_demo_num.dir/all:
+	$(MAKE) -f CMakeFiles/ceres_demo_num.dir/build.make CMakeFiles/ceres_demo_num.dir/depend
+	$(MAKE) -f CMakeFiles/ceres_demo_num.dir/build.make CMakeFiles/ceres_demo_num.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hao007/hao_ceres-solver/examples/build/CMakeFiles --progress-num=3,4 "Built target ceres_demo_num"
+.PHONY : CMakeFiles/ceres_demo_num.dir/all
+
+# Include target in all.
+all: CMakeFiles/ceres_demo_num.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ceres_demo_num.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hao007/hao_ceres-solver/examples/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ceres_demo_num.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hao007/hao_ceres-solver/examples/build/CMakeFiles 0
+.PHONY : CMakeFiles/ceres_demo_num.dir/rule
+
+# Convenience name for target.
+ceres_demo_num: CMakeFiles/ceres_demo_num.dir/rule
+
+.PHONY : ceres_demo_num
+
+# clean rule for target.
+CMakeFiles/ceres_demo_num.dir/clean:
+	$(MAKE) -f CMakeFiles/ceres_demo_num.dir/build.make CMakeFiles/ceres_demo_num.dir/clean
+.PHONY : CMakeFiles/ceres_demo_num.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ceres_demo_num.dir/clean
 
 .PHONY : clean
 

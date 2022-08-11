@@ -1,3 +1,5 @@
 /home/hao007/hao_ceres-solver/examples/build/CMakeFiles/rebuild_cache.dir
-/home/hao007/hao_ceres-solver/examples/build/CMakeFiles/ceres_demo.dir
+/home/hao007/hao_ceres-solver/examples/build/CMakeFiles/curve_fitting.dir
 /home/hao007/hao_ceres-solver/examples/build/CMakeFiles/edit_cache.dir
+/home/hao007/hao_ceres-solver/examples/build/CMakeFiles/ceres_demo.dir
+/home/hao007/hao_ceres-solver/examples/build/CMakeFiles/ceres_demo_num.dir

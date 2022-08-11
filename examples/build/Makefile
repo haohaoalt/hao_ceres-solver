@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named curve_fitting
+
+# Build rule for target.
+curve_fitting: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 curve_fitting
+.PHONY : curve_fitting
+
+# fast build rule for target.
+curve_fitting/fast:
+	$(MAKE) -f CMakeFiles/curve_fitting.dir/build.make CMakeFiles/curve_fitting.dir/build
+.PHONY : curve_fitting/fast
+
+#=============================================================================
 # Target rules for targets named ceres_demo
 
 # Build rule for target.
@@ -122,6 +135,46 @@ ceres_demo: cmake_check_build_system
 ceres_demo/fast:
 	$(MAKE) -f CMakeFiles/ceres_demo.dir/build.make CMakeFiles/ceres_demo.dir/build
 .PHONY : ceres_demo/fast
+
+#=============================================================================
+# Target rules for targets named ceres_demo_num
+
+# Build rule for target.
+ceres_demo_num: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ceres_demo_num
+.PHONY : ceres_demo_num
+
+# fast build rule for target.
+ceres_demo_num/fast:
+	$(MAKE) -f CMakeFiles/ceres_demo_num.dir/build.make CMakeFiles/ceres_demo_num.dir/build
+.PHONY : ceres_demo_num/fast
+
+curve_fitting.o: curve_fitting.cpp.o
+
+.PHONY : curve_fitting.o
+
+# target to build an object file
+curve_fitting.cpp.o:
+	$(MAKE) -f CMakeFiles/curve_fitting.dir/build.make CMakeFiles/curve_fitting.dir/curve_fitting.cpp.o
+.PHONY : curve_fitting.cpp.o
+
+curve_fitting.i: curve_fitting.cpp.i
+
+.PHONY : curve_fitting.i
+
+# target to preprocess a source file
+curve_fitting.cpp.i:
+	$(MAKE) -f CMakeFiles/curve_fitting.dir/build.make CMakeFiles/curve_fitting.dir/curve_fitting.cpp.i
+.PHONY : curve_fitting.cpp.i
+
+curve_fitting.s: curve_fitting.cpp.s
+
+.PHONY : curve_fitting.s
+
+# target to generate assembly for a file
+curve_fitting.cpp.s:
+	$(MAKE) -f CMakeFiles/curve_fitting.dir/build.make CMakeFiles/curve_fitting.dir/curve_fitting.cpp.s
+.PHONY : curve_fitting.cpp.s
 
 helloworld.o: helloworld.cpp.o
 
@@ -150,6 +203,33 @@ helloworld.cpp.s:
 	$(MAKE) -f CMakeFiles/ceres_demo.dir/build.make CMakeFiles/ceres_demo.dir/helloworld.cpp.s
 .PHONY : helloworld.cpp.s
 
+numericdiff.o: numericdiff.cpp.o
+
+.PHONY : numericdiff.o
+
+# target to build an object file
+numericdiff.cpp.o:
+	$(MAKE) -f CMakeFiles/ceres_demo_num.dir/build.make CMakeFiles/ceres_demo_num.dir/numericdiff.cpp.o
+.PHONY : numericdiff.cpp.o
+
+numericdiff.i: numericdiff.cpp.i
+
+.PHONY : numericdiff.i
+
+# target to preprocess a source file
+numericdiff.cpp.i:
+	$(MAKE) -f CMakeFiles/ceres_demo_num.dir/build.make CMakeFiles/ceres_demo_num.dir/numericdiff.cpp.i
+.PHONY : numericdiff.cpp.i
+
+numericdiff.s: numericdiff.cpp.s
+
+.PHONY : numericdiff.s
+
+# target to generate assembly for a file
+numericdiff.cpp.s:
+	$(MAKE) -f CMakeFiles/ceres_demo_num.dir/build.make CMakeFiles/ceres_demo_num.dir/numericdiff.cpp.s
+.PHONY : numericdiff.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -157,11 +237,19 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... ceres_demo"
+	@echo "... curve_fitting"
 	@echo "... edit_cache"
+	@echo "... ceres_demo"
+	@echo "... ceres_demo_num"
+	@echo "... curve_fitting.o"
+	@echo "... curve_fitting.i"
+	@echo "... curve_fitting.s"
 	@echo "... helloworld.o"
 	@echo "... helloworld.i"
 	@echo "... helloworld.s"
+	@echo "... numericdiff.o"
+	@echo "... numericdiff.i"
+	@echo "... numericdiff.s"
 .PHONY : help
 
 
